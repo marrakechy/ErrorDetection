@@ -2,7 +2,7 @@ def credit_card_check(card_number):
     card_number = list(map(int, card_number))
     t_sum = 0
 
-    for i in range(len(card_number) - 2, -1, -2):
+    for i in range( 0, len(card_number), 2):
         doubled_digit = card_number[i] * 2
         if doubled_digit > 9:
             doubled_digit -= 9
