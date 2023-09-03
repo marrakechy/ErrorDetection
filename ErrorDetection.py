@@ -8,6 +8,7 @@ def credit_card_check(card_number):
             doubled_digit -= 9
         card_number[i] = doubled_digit
 
+
     t_sum = sum(card_number)
 
     if t_sum % 10 == 0:
